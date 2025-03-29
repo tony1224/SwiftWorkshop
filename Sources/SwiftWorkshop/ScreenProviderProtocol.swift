@@ -12,7 +12,7 @@ public protocol ScreenProviderProtocol {
     func make(_ screenType: ScreenType) -> UIViewController
 }
 
-public class ScreenProvider<T>: ScreenProviderProtocol {
+open class ScreenProvider<T>: ScreenProviderProtocol {
     public init() {}
 
     open func make(_ screenType: T) -> UIViewController {
